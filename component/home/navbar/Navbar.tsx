@@ -9,7 +9,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/server";
 
 import { ArrowRight } from "lucide-react";
-import NavbarMenu from "./navbar-menu";
+// import NavbarMenu from "./navbar-menu";
 import { cn } from "@/lib/utils";
 
 const Navbar = ({ className }: { className?: string }) => {
