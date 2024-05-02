@@ -5,8 +5,8 @@ import Link from 'next/link';
 const MainContainer = () => {
   return (
     <div className="container -mt-20 pt-[188px] md:pt-[300px] pb-[215px] sm:pb-[290px] px-[22px] sm:px-0 mx-auto text-center">
-      
-      <div className='mx-auto mb-4 -mt-20 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50'>
+
+      {/* <div className='mx-auto mb-4 -mt-20 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50'>
       <p className='text-sm font-semibold text-gray-700'>
         
         Talk with PDF
@@ -27,9 +27,9 @@ const MainContainer = () => {
       </h2>
       <p className="text-xl sm:text-2xl pb-10 sm:pb-8 leading-[19px] sm:leading-[34.5px] w-[232px] sm:w-full tracking-[-0.4px] sm:tracking-[-0.6px] text-center mx-auto">
         Have a conversation with your papers, textbooks, and contracts for free
-      </p>
+      </p> */}
       <Link className={buttonVariants()} href={'/dashboard'} target='blank'>
-        Get Started <ArrowRight className='ml-2 h-5 w-5'/>
+        Get Started <ArrowRight className='ml-2 h-5 w-5' />
       </Link>
     </div>
   );

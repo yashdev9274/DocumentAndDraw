@@ -11,6 +11,7 @@ import {
 import { ArrowRight } from "lucide-react";
 // import NavbarMenu from "./navbar-menu";
 import { cn } from "@/lib/utils";
+import { NavigationMenuBar } from "../NavigationBar";
 
 const Navbar = ({ className }: { className?: string }) => {
 
@@ -21,8 +22,7 @@ const Navbar = ({ className }: { className?: string }) => {
         // <NavbarMenu />
         <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
             < MaxWidthWrapper >
-
-                {/* <NavbarMenu /> */}
+                {/* <NavigationMenuBar /> */}
                 <div className="flex h-14 items-center justify-between border-b border-zinc-200">
                     <Link
                         href="/"
@@ -32,9 +32,10 @@ const Navbar = ({ className }: { className?: string }) => {
                             D&D
                         </span>
                     </Link>
+                    <div>
 
-
-
+                        <NavigationMenuBar />
+                    </div>
                     <div className="hidden items-center space-x-4 sm:flex">
                         <>
                             <Link
@@ -63,7 +64,6 @@ const Navbar = ({ className }: { className?: string }) => {
                             </RegisterLink>
                         </>
                     </div>
-
                 </div>
             </MaxWidthWrapper >
         </nav >

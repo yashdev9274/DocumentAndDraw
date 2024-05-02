@@ -9,43 +9,41 @@ import FileList from './_components/FileList'
 import AdBanner from './../../_components/AdBanner'
 function Dashboard() {
 
-  const convex=useConvex();
-  const {user}:any=useKindeBrowserClient();
+  const convex = useConvex();
+  const { user }: any = useKindeBrowserClient();
   //const getUser=useQuery(api.user.getUser,{email:user?.email});
 
-  const createUser=useMutation(api.user.createUser);
-  useEffect(()=>{
-      if(user)
-      {
-        checkUser()
-      }
-  },[user])
-  
+  const createUser = useMutation(api.user.createUser);
+  useEffect(() => {
+    if (user) {
+      checkUser()
+    }
+  }, [user])
 
-  const checkUser=async()=>{
-    const result=await convex.query(api.user.getUser,{email:user?.email});
-    if(!result?.length)
-    {
-        createUser({
-          name:user.given_name,
-          email:user.email,
-          image:user.picture
-        }).then((resp)=>{
-          console.log(resp)
-        })
+
+  const checkUser = async () => {
+    const result = await convex.query(api.user.getUser, { email: user?.email });
+    if (!result?.length) {
+      createUser({
+        name: user.given_name,
+        email: user.email,
+        image: user.picture
+      }).then((resp) => {
+        console.log(resp)
+      })
     }
 
   }
   return (
     <div className='p-8'>
-      <Header/>
+      <Header />
 
-      <FileList/>
+      <FileList />
       <AdBanner
-          data-ad-slot="4796371341"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
+        data-ad-slot="4796371341"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </div>
 
   )

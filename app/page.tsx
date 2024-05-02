@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <MaxWidthWrapper className="sm:p-7 sm:pb-0">
       <MainContainer />
-      <HowToUse />
+      {/* <HowToUse />
       <WeAreOpenSourced />
-      <Footer />
+      <Footer /> */}
     </MaxWidthWrapper>
 
 
