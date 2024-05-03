@@ -26,6 +26,9 @@ dependencies:
   '@excalidraw/excalidraw':
     specifier: ^0.17.6
     version: 0.17.6(react-dom@18.3.1)(react@18.3.1)
+  '@heroicons/react':
+    specifier: ^2.1.3
+    version: 2.1.3(react@18.3.1)
   '@kinde-oss/kinde-auth-nextjs':
     specifier: ^2.2.4
     version: 2.2.4(@babel/core@7.24.5)(next@14.1.0)(react-dom@18.3.1)(react@18.3.1)
@@ -80,6 +83,9 @@ dependencies:
   react-dom:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
+  solid:
+    specifier: link:@heroicons/react/20/solid
+    version: link:@heroicons/react/20/solid
   sonner:
     specifier: ^1.4.41
     version: 1.4.41(react-dom@18.3.1)(react@18.3.1)
@@ -1584,6 +1590,14 @@ packages:
 
   /@floating-ui/utils@0.2.2:
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+    dev: false
+
+  /@heroicons/react@2.1.3(react@18.3.1):
+    resolution: {integrity: sha512-fEcPfo4oN345SoqdlCDdSa4ivjaKbk0jTd+oubcgNxnNgAfzysfwWfQUr+51wigiWHQQRiZNd1Ao0M5Y3M2EGg==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.3.1
     dev: false
 
   /@isaacs/cliui@8.0.2:

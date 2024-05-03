@@ -5,11 +5,12 @@ import Footer from "@/component/home/Footer";
 import HowToUse from "@/component/home/HowToUse";
 import MainContainer from "@/component/home/MainContainer";
 import WeAreOpenSourced from "@/component/home/WeAreOpenSourced";
-import dashboard from "@/public/asset/dnd-dashboard.svg";
+import dashboard from "@/public/asset/dashboard.png";
 import { ContainerScroll } from "@/component/home/container-scroll-animation";
 import { buttonVariants } from '@/components/ui/button';
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/component/home/hero-highlight";
+import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid';
 import { TextGenerateEffect } from "@/component/home/text-generate-effect";
 
 import Link from 'next/link';
@@ -19,6 +20,14 @@ import Image from "next/image";
 
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
+
+const includedFeatures = [
+  'Private forum access',
+  'Member resources',
+  'Entry to annual conference',
+  'Official member t-shirt',
+]
+
 export default function Home() {
   return (
     // <MaxWidthWrapper className="sm:p-7 sm:pb-0">
@@ -30,9 +39,63 @@ export default function Home() {
 
 
     <>
+
+      {/*  */}
+
+      <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div
+          className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style={{
+              clipPath:
+                'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
+            }}
+          />
+        </div>
+        <div
+          className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          aria-hidden="true"
+        >
+          <div
+            className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            style={{
+              clipPath:
+                'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
+            }}
+          />
+        </div>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p className="text-sm leading-6 text-gray-900">
+            <strong className="font-semibold">GeneriCon 2023</strong>
+            <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
+              <circle cx={1} cy={1} r={1} />
+            </svg>
+            Join us in Denver from June 7 – 9 to see what’s coming next.
+          </p>
+          <a
+            href="#"
+            className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          >
+            Register now <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <div className="flex flex-1 justify-end">
+          <button type="button" className="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <span className="sr-only">Dismiss</span>
+            <XMarkIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+
+      {/*  */}
+
+
       <section
         className="
-        h-full w-full pt-36 
+        h-full w-full pt-10 
         relative flex items-center 
         justify-center flex-col"
       >
@@ -72,20 +135,39 @@ export default function Home() {
             }}
             className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
           >
-            With insomnia, nothing&apos;s real. Everything is far away. Everything
-            is a{" "}
+
             <Highlight className="text-black dark:text-white">
-              copy, of a copy, of a copy.
+              Everything is a copy.
             </Highlight>
           </motion.h1>
         </HeroHighlight>
+        <MainContainer />
+
+
 
         {/* <MainContainer /> */}
 
         {/* Tailwind component starts here */}
       </section>
 
-      <div >
+      <div className="flex justify-center items-center relative md:mt-[-70px]">
+        <Image
+          src={dashboard}
+          alt="banner image"
+          height={1200}
+          width={1200}
+          className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+        />
+        <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
+      </div>
+
+
+
+
+      {/* <section
+        className="flex justify-center items-center relative md:mt-[-70px]"
+      >
+
         <div className="mx-auto max-w-7xl py-10 sm:px-6 sm:py-25 lg:px-8 h-36 ">
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <svg
@@ -130,10 +212,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+
+      </section> */}
+
       {/* <div className="flex justify-center items-center flex-col gap-4 md:!mt-20 mt-[-60px] py-10"> */}
 
-      <TextGenerateEffect words={words} />
+      {/* <TextGenerateEffect words={words} /> */}
 
       {/* </div> */}
       {/* Tailwind component ends here */}
@@ -174,6 +258,67 @@ export default function Home() {
       {/* Container Scroll Animation ends here */}
 
       {/* Pricing section starts here */}
+      <section className="
+        h-full w-full pt-36 
+        relative flex items-center 
+        justify-center flex-col">
+
+        <div className="bg-white py-24 sm:py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl sm:text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple no-tricks pricing</h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
+                in. Explicabo id ut laborum.
+              </p>
+            </div>
+            <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+              <div className="p-8 sm:p-10 lg:flex-auto">
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
+                <p className="mt-6 text-base leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
+                  repellendus etur quidem assumenda.
+                </p>
+                <div className="mt-10 flex items-center gap-x-4">
+                  <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
+                  <div className="h-px flex-auto bg-gray-100" />
+                </div>
+                <ul
+                  role="list"
+                  className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+                >
+                  {includedFeatures.map((feature) => (
+                    <li key={feature} className="flex gap-x-3">
+                      <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                  <div className="mx-auto max-w-xs px-8">
+                    <p className="text-base font-semibold text-gray-600">Pay once, own it forever</p>
+                    <p className="mt-6 flex items-baseline justify-center gap-x-2">
+                      <span className="text-5xl font-bold tracking-tight text-gray-900">$349</span>
+                      <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
+                    </p>
+                    <a
+                      href="#"
+                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Get access
+                    </a>
+                    <p className="mt-6 text-xs leading-5 text-gray-600">
+                      Invoices and receipts available for easy company reimbursement
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Pricing section ends here */}
