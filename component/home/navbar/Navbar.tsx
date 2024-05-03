@@ -7,6 +7,8 @@ import {
     RegisterLink,
     getKindeServerSession,
 } from "@kinde-oss/kinde-auth-nextjs/server";
+import Image from "next/image";
+import DocNDraw from "@/public/asset/DocNDraw-logo.svg"
 
 import { ArrowRight } from "lucide-react";
 // import NavbarMenu from "./navbar-menu";
@@ -24,13 +26,17 @@ const Navbar = ({ className }: { className?: string }) => {
             < MaxWidthWrapper >
                 {/* <NavigationMenuBar /> */}
                 <div className="flex h-14 items-center justify-between border-b border-zinc-200">
+
+
                     <Link
                         href="/"
                         className="flex z-40 font-semibold"
                     >
+                        {/* <Image src={DocNDraw} alt="logo" className="h-8 relative px-" /> */}
                         <span>
                             D&D
                         </span>
+
                     </Link>
                     <div>
 
