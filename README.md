@@ -72,6 +72,12 @@ pnpm dev
 bun dev
 ```
 
+<br>
+
+# Why choose DocnDraw?
+
+# What can you do with DocnDraw?
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
