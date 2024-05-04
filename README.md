@@ -1,7 +1,3 @@
-![image](https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/e7975389-8597-4ec6-9f2d-84c16aa02bd8)
-
-
-
 <p align="center">
 	<h1 align="center"><b>Doc&Draw</b></h1>
 <p align="center">
@@ -15,6 +11,14 @@
     <a href="https://github.com/yashdev9274/DocumentAndDraw/issues">Issues</a>
   </p>
 </p>
+
+<br>
+
+![image](https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/e7975389-8597-4ec6-9f2d-84c16aa02bd8)
+
+<br>
+
+
 
 # Under active development
 
@@ -48,12 +52,8 @@ We are working on the documentation to get started with DocNDraw for local devel
 - Resend (email)
 - Novu (notifications)
 - Github Actions (CI/CD)
-- Plaid (Bank connection in Canada and US)
-- Teller (Bank connection in the US)
 - Loops (Marketing email)
 - Dub (Short URLs)
-
-
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -73,4 +73,13 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+# Join the Community
+
+- Star the repo
+- Join [discussions](https://github.com/yashdev9274/DocumentAndDraw/discussions) and track [issues](https://github.com/yashdev9274/DocumentAndDraw/issues) 
+- Follow us on [Twitter](https://twitter.com/dew_yashtwt) or [LinkedIn](https://www.linkedin.com/in/yash-dewasthale/) 
+- Join our [Discord]("")
+- [Contributions]() are, of course, most welcome! 
 
