@@ -48,6 +48,10 @@
 
 We are working on the documentation to get started with DocNDraw for local development.
 
+---------------
+
+<br>
+
 # App Architecture
 
 - Pnpm
@@ -76,9 +80,10 @@ We are working on the documentation to get started with DocNDraw for local devel
 - Dub (Short URLs)
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+</br>
+
+## Developement
 
 First, run the development server:
 
@@ -92,13 +97,34 @@ pnpm dev
 bun dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 <br>
 
 # Why choose DocnDraw?
 
 # What can you do with DocnDraw?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- ROADMAP -->
+
+## Roadmap
+
+<a href=""><img src="https://user-images.githubusercontent.com/8019099/176388295-25081ca4-207e-4468-8079-37b195fa8e59.png" alt="Roadmap" /></a>
+
+See the [roadmap project]() for a list of proposed features (and known issues). You can change the view to see planned tagged releases.
+
+<!-- RORADMAP -->
+
+<br>
+
+<!-- CONTRIBUTORS -->
+
+## Contributors
+
+<a href="https://github.com/yashdev9274/DocumentAndDraw/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yashdev9274/DocumentAndDraw" />
+</a>
+
 
 
 # Join the Community
