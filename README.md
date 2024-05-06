@@ -77,11 +77,8 @@ We are working on the documentation to get started with DocNDraw for local devel
 
 ### Services
 
-- Trigger.dev (background jobs)
 - Resend (email)
-- Novu (notifications)
 - Github Actions (CI/CD)
-- Loops (Marketing email)
 - Dub (Short URLs)
 
 
