@@ -1,20 +1,40 @@
 <p align="center">
-	<h1 align="center"><b>Doc&Draw</b></h1>
+	<p align="center">
+		<a href="https://github.com/yashdev9274/DocumentAndDraw">
+   		<img  width="900" align="center" src="https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/71c70a86-18a8-49d3-b03f-ab6d359ef004" alt="Logo">
+  		</a>
+	</p>
+ 	
+  <h1 align="center"><b>Doc&Draw</b></h1>
+
+</p>
+
 <p align="center">
    Stand out as a Developer.
     <br />
+    <a href=""><strong>Learn more »</strong></a>
     <br />
+	<br>
     <a href="">Discord</a>
     ·
-    <a href="https://docndraw.vercel.app">Website</a>
+    <a href="">Website</a>
     ·
     <a href="https://github.com/yashdev9274/DocumentAndDraw/issues">Issues</a>
+    ·
+    <a href="">Roadmap</a>
   </p>
 </p>
 
 <br>
+<p>
 
-![image](https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/e7975389-8597-4ec6-9f2d-84c16aa02bd8)
+ 
+</p>
+<a href="https://github.com/yashdev9274/DocumentAndDraw">
+	<img  align="center" src="https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/1078fd1f-3828-4138-9830-995ad9e45baf" alt="Logo">
+</a>
+
+
 
 <br>
 
@@ -26,7 +46,7 @@
 
 # Get started
 
-We are working on the documentation to get started with DocNDraw for local development: https://docndraw.vercel.app
+We are working on the documentation to get started with DocNDraw for local development.
 
 # App Architecture
 
