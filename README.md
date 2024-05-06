@@ -39,6 +39,11 @@
 <br>
 
 
+# About the project
+
+<img width="100%" alt="booking-screen" src="https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/bfbdada5-c7fc-4f5b-a622-269caad301c5">
+
+<br>
 
 # Under active development
 
