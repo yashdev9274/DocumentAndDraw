@@ -39,11 +39,7 @@ function Dashboard() {
       <Header />
 
       <FileList />
-      <AdBanner
-        data-ad-slot="4796371341"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
+
     </div>
 
   )
