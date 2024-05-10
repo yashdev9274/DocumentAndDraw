@@ -21,27 +21,16 @@ import Image from "next/image";
 import { SocialLinks } from "@/component/home/social-links";
 import { DockMenu } from "@/component/home/dockMenu";
 import { Footer } from "@/component/home/footer";
+import Hero from "./_components/Hero";
+import PricingSection from "./_components/pricingSection";
+
+import { BorderBeam } from "@/component/home/border-beam";
 
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
 
-const includedFeatures = [
-  'Private forum access',
-  'Member resources',
-  'Entry to annual conference',
-  'Official member t-shirt',
-]
 
 export default function Home() {
   return (
-    // <MaxWidthWrapper className="sm:p-7 sm:pb-0">
-    //   <MainContainer />
-    //   {/* <HowToUse />
-    //   <WeAreOpenSourced />
-    //   <Footer /> */}
-    // </MaxWidthWrapper>
-
 
     <>
 
@@ -97,64 +86,11 @@ export default function Home() {
 
       {/*  */}
 
-
-      <section
-        className="
-        h-full w-full pt-10 
-        relative flex items-center 
-        justify-center flex-col"
-      >
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10" />
-
-        {/*  */}
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className=" fill-black relative rounded-full px-3 py-1 text-sm leading-6 text-black-600 ring-1 ring-blue-900 hover:ring-gray-900/20">
-            Announcing our new feature.{' '}
-            <a href="#" className="font-semibold text-indigo-600">
-              <span className="absolute inset-0" aria-hidden="true" />
-              Read more <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </div>
-
-        {/*  */}
-
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h1 className="text-6xl font-bold text-center md:text-[100px] pt-5 py-7">
-            Doc&Draw
-          </h1>
-        </div>
-        <HeroHighlight>
-          <motion.h1
-            initial={{
-              opacity: 0,
-              y: 20,
-            }}
-            animate={{
-              opacity: 1,
-              y: [20, -5, 0],
-            }}
-            transition={{
-              duration: 0.5,
-              ease: [0.4, 0.0, 0.2, 1],
-            }}
-            className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
-          >
-
-            <Highlight className="text-black dark:text-white">
-              Stand out as a Developer.
-            </Highlight>
-          </motion.h1>
-        </HeroHighlight>
-        <MainContainer />
+      <Hero />
 
 
 
-        {/* <MainContainer /> */}
-
-        {/* Tailwind component starts here */}
-      </section>
-
+      {/* Dashboard component starts here */}
       <div className="flex justify-center items-center relative md:mt-[-70px]">
         <Image
           src={dashboard}
@@ -164,7 +100,9 @@ export default function Home() {
           className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
         />
         <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
+        <BorderBeam size={250} duration={12} delay={9} />
       </div>
+
 
       <section
         className="
@@ -175,190 +113,11 @@ export default function Home() {
         <DockMenu />
       </section>
 
-
-
-
-
-
-
-      {/* Pricing section starts here */}
-      <section className="
-        h-full w-full pt-1 
-        relative flex items-center 
-        justify-center flex-col bg-[#F6F6F3] dark:bg-[#0C0C0C]">
-
-        <div className="bg-[#F6F6F3] dark:bg-[#0C0C0C] py-24 sm:py-20">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple no-tricks pricing</h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-                in. Explicabo id ut laborum.
-              </p>
-            </div>
-            <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-              <div className="p-8 sm:p-10 lg:flex-auto">
-                <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
-                <p className="mt-6 text-base leading-7 text-gray-600">
-                  Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
-                  repellendus etur quidem assumenda.
-                </p>
-                <div className="mt-10 flex items-center gap-x-4">
-                  <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
-                  <div className="h-px flex-auto bg-gray-100" />
-                </div>
-                <ul
-                  role="list"
-                  className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-                >
-                  {includedFeatures.map((feature) => (
-                    <li key={feature} className="flex gap-x-3">
-                      <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                  <div className="mx-auto max-w-xs px-8">
-                    <p className="text-base font-semibold text-gray-600">Pay once, own it forever</p>
-                    <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                      <span className="text-5xl font-bold tracking-tight text-gray-900">$349</span>
-                      <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
-                    </p>
-                    <a
-                      href="#"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Get access
-                    </a>
-                    <p className="mt-6 text-xs leading-5 text-gray-600">
-                      Invoices and receipts available for easy company reimbursement
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <PricingSection />
 
       {/* Pricing section ends here */}
 
       <Footer />
-
-      <footer className="border-t-[1px] border-border px-4 md:px-6 pt-10 md:pt-16 bg-[#F6F6F3] dark:bg-[#0C0C0C]">
-        <div className="container">
-          <div className="flex justify-between items-center border-border border-b-[1px] pb-10 md:pb-16 mb-12">
-            <Link href="/" className="scale-50 -ml-[52px] md:ml-0 md:scale-100">
-              {/* <LogoLarge /> */}
-              <Image src={logo} alt="logo" width={50} height={10} />
-              <span className="font-normal md:text-2xl text-right">Doc&Draw</span>
-            </Link>
-
-            <span className="font-normal md:text-2xl text-right">
-              Stand out as a Developer.
-            </span>
-          </div>
-
-          <div className="flex flex-col md:flex-row w-full mb-10 md:mb-20">
-            <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row md:w-6/12 justify-between leading-8">
-              <div>
-                <span className="font-medium">Product</span>
-                <ul>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/">Features</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/pricing">Pricing</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/story">Story</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/updates">Updates</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/download">Download</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/feature-request">Feature Request</Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <span>Resources</span>
-                <ul>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="https://git.new/docndraw">Github</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/support">Support</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/policy">Privacy policy</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/terms">Terms and Conditions</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/open-startup">Open Startup</Link>
-                  </li>
-                  <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                    <Link href="/pitch">Investors</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div>
-              <span>Solutions</span>
-              <ul>
-                <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                  <Link href="/engine">Midday Engine</Link>
-                </li>
-                <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                  <Link href="https://docs.docndraw/">
-                    Self hosted
-                  </Link>
-                </li>
-                <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                  <Link href="/">SaaS hosting</Link>
-                </li>
-                {/* Nothing here yet */}
-                {/* <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                  <Link href="/open-startup">Open startup</Link>
-                </li> */}
-                <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                  <Link href="/oss-friends">OSS friends</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="md:w-6/12 flex mt-8 md:mt-0 md:justify-end">
-              <div className="flex justify-between md:items-end flex-col space-y-14">
-                <div className="flex items-center">
-                  <SocialLinks />
-                </div>
-                <div className="md:mr-0 mr-auto">
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <p className="text-xs text-[#000000] dark:text-[#3E3E3E] mb-50">
-            @2024 DocandDraw
-          </p>
-
-        </div>
-      </footer>
-
-
-
 
     </>
   );

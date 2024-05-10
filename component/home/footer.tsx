@@ -18,7 +18,7 @@ export function Footer() {
             <div className="container">
                 <div className="flex justify-between items-center border-border border-b-[1px] pb-10 md:pb-16 mb-12">
                     <Link href="/" className="scale-50 -ml-[52px] md:ml-0 md:scale-100">
-                        <LogoLarge />
+                        {/* <LogoLarge /> */}
                         <span className="sr-only">Doc&Draw</span>
                     </Link>
 
@@ -57,7 +57,7 @@ export function Footer() {
                             <span>Resources</span>
                             <ul>
                                 <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                                    <Link href="">Github</Link>
+                                    <Link href="https://git.new/docndraw">Github</Link>
                                 </li>
                                 <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
                                     <Link href="/support">Support</Link>
@@ -81,10 +81,7 @@ export function Footer() {
                             <span>Solutions</span>
                             <ul>
                                 <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                                    <Link href="/engine">Midday Engine</Link>
-                                </li>
-                                <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                                    <Link href="">
+                                    <Link href="https://docs.docndraw/">
                                         Self hosted
                                     </Link>
                                 </li>
