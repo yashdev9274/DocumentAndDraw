@@ -39,6 +39,11 @@
 <br>
 
 
+# About the project
+
+<img width="100%" alt="booking-screen" src="https://github.com/yashdev9274/DocumentAndDraw/assets/72986960/bfbdada5-c7fc-4f5b-a622-269caad301c5">
+
+<br>
 
 # Under active development
 
@@ -47,6 +52,10 @@
 # Get started
 
 We are working on the documentation to get started with DocNDraw for local development.
+
+---------------
+
+<br>
 
 # App Architecture
 
@@ -68,17 +77,15 @@ We are working on the documentation to get started with DocNDraw for local devel
 
 ### Services
 
-- Trigger.dev (background jobs)
 - Resend (email)
-- Novu (notifications)
 - Github Actions (CI/CD)
-- Loops (Marketing email)
 - Dub (Short URLs)
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+</br>
+
+## Developement
 
 First, run the development server:
 
@@ -92,13 +99,34 @@ pnpm dev
 bun dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 <br>
 
 # Why choose DocnDraw?
 
 # What can you do with DocnDraw?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- ROADMAP -->
+
+## Roadmap
+
+<a href=""><img src="https://user-images.githubusercontent.com/8019099/176388295-25081ca4-207e-4468-8079-37b195fa8e59.png" alt="Roadmap" /></a>
+
+See the [roadmap project]() for a list of proposed features (and known issues). You can change the view to see planned tagged releases.
+
+<!-- RORADMAP -->
+
+<br>
+
+<!-- CONTRIBUTORS -->
+
+## Contributors
+
+<a href="https://github.com/yashdev9274/DocumentAndDraw/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yashdev9274/DocumentAndDraw" />
+</a>
+
 
 
 # Join the Community
