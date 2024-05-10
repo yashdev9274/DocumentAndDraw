@@ -14,6 +14,7 @@ import { ArrowRight } from "lucide-react";
 // import NavbarMenu from "./navbar-menu";
 import { cn } from "@/lib/utils";
 import { NavigationMenuBar } from "../NavigationBar";
+import { ModeToggle } from "@/component/global/toggle";
 
 const Navbar = ({ className }: { className?: string }) => {
 
@@ -44,7 +45,7 @@ const Navbar = ({ className }: { className?: string }) => {
                     </div>
                     <div className="hidden items-center space-x-4 sm:flex">
                         <>
-                            <Link
+                            {/* <Link
                                 href='/pricing'
                                 className={buttonVariants({
                                     variant: "ghost",
@@ -52,7 +53,8 @@ const Navbar = ({ className }: { className?: string }) => {
                                 })}
                             >
                                 Pricing
-                            </Link>
+                            </Link> */}
+                            <ModeToggle />
                             <LoginLink
                                 className={buttonVariants({
                                     variant: "ghost",

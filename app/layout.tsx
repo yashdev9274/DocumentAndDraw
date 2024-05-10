@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/component/home/navbar/Navbar";
+import { ThemeProvider } from "@/providers/theme-provider"
 import ConvexClientProvider from "./ConvexClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,17 +19,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className="light" suppressHydrationWarning>
       <body className={cn(
         'min-h-screen font-sans antialiased grainy',
         inter.className
       )}>
-        <Navbar />
-        <ConvexClientProvider>
-          {/* <Navbar /> */}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
 
-          {children}
-        </ConvexClientProvider>
+
+          <Navbar />
+          <ConvexClientProvider>
+            {/* <Navbar /> */}
+
+            {children}
+          </ConvexClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

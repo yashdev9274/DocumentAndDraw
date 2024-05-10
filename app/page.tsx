@@ -185,9 +185,9 @@ export default function Home() {
       <section className="
         h-full w-full pt-1 
         relative flex items-center 
-        justify-center flex-col">
+        justify-center flex-col bg-[#F6F6F3] dark:bg-[#0C0C0C]">
 
-        <div className="bg-white py-24 sm:py-20">
+        <div className="bg-[#F6F6F3] dark:bg-[#0C0C0C] py-24 sm:py-20">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple no-tricks pricing</h2>
