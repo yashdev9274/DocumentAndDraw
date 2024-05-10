@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SocialLinks } from "@/component/home/social-links";
+import { LogoLarge } from "./logo-large";
 // import { StatusWidget } from "./status-widget";
 
 export function Footer() {
@@ -17,12 +18,12 @@ export function Footer() {
             <div className="container">
                 <div className="flex justify-between items-center border-border border-b-[1px] pb-10 md:pb-16 mb-12">
                     <Link href="/" className="scale-50 -ml-[52px] md:ml-0 md:scale-100">
-                        {/* <LogoLarge /> */}
-                        <span className="sr-only">Midday</span>
+                        <LogoLarge />
+                        <span className="sr-only">Doc&Draw</span>
                     </Link>
 
                     <span className="font-normal md:text-2xl text-right">
-                        Run your business smarter.
+                        Stand out as a Developer.
                     </span>
                 </div>
 
@@ -56,7 +57,7 @@ export function Footer() {
                             <span>Resources</span>
                             <ul>
                                 <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                                    <Link href="https://git.new/midday">Github</Link>
+                                    <Link href="">Github</Link>
                                 </li>
                                 <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
                                     <Link href="/support">Support</Link>
@@ -83,7 +84,7 @@ export function Footer() {
                                     <Link href="/engine">Midday Engine</Link>
                                 </li>
                                 <li className="text-[#707070] transition-colors hover:text-primary dark:text-[#878787]">
-                                    <Link href="https://docs.midday.ai/self-hosted">
+                                    <Link href="">
                                         Self hosted
                                     </Link>
                                 </li>
@@ -112,13 +113,8 @@ export function Footer() {
                     </div>
                 </div>
 
-                <p className="text-xs text-[#B3B3B2] dark:text-[#3E3E3E] mb-12">
-                    Cal.com® is a registered trademark by Cal.com, Inc. All rights
-                    reserved. Apple.com® is a registered trademark by Apple.com, Inc. All
-                    rights reserved. Discord.com® is a registered trademark by
-                    Discord.com, Inc. All rights reserved. Github.com® is a registered
-                    trademark by Github.com, Inc. All rights reserved. Notion.com® is a
-                    registered trademark by Notion.com, Inc. All rights reserved.
+                <p className="text-xs text-[#000000] dark:text-[#3E3E3E] mb-50">
+                    @2024 DocandDraw
                 </p>
             </div>
         </footer>

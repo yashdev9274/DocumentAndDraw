@@ -23,8 +23,9 @@ export default function RootLayout({
         'min-h-screen font-sans antialiased grainy',
         inter.className
       )}>
+        <Navbar />
         <ConvexClientProvider>
-          <Navbar />
+          {/* <Navbar /> */}
 
           {children}
         </ConvexClientProvider>
