@@ -55,8 +55,6 @@ export default function Home() {
 
       <PricingSection />
 
-      {/* Pricing section ends here */}
-
       <Footer />
 
     </>
