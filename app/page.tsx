@@ -19,7 +19,7 @@ import Link from 'next/link';
 
 import Image from "next/image";
 import { SocialLinks } from "@/component/home/social-links";
-import { DockMenu } from "@/component/home/dockMenu";
+import { DockMenu } from "./_components/dockMenu";
 import { Footer } from "@/component/home/footer";
 import Hero from "./_components/Hero";
 import PricingSection from "./_components/pricingSection";
