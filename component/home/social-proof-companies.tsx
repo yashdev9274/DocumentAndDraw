@@ -2,39 +2,54 @@
 
 import * as React from "react"
 
-const companies = [
-    "Google",
-    "Microsoft",
-    "Amazon",
-    "Netflix",
-    "YouTube",
-    "Instagram",
-    "Uber",
-    "Spotify",
-];
-
-export function Companies() {
+const Companies = () => {
     return (
-        <section id="companies">
-            <div className="py-14">
-                <div className="container mx-auto px-4 md:px-8">
-                    <h3 className="text-center text-sm font-semibold text-gray-500">
-                        TRUSTED BY LEADING TEAMS
-                    </h3>
-                    <div className="relative mt-6">
-                        <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4 xl:grid-cols-8 xl:gap-4">
-                            {companies.map((logo, idx) => (
-                                <img
-                                    key={idx}
-                                    src={`https://cdn.magicui.design/companies/${logo}.svg`}
-                                    className="h-10 w-40 px-2 dark:brightness-0 dark:invert brightness-0 invert"
-                                    alt={logo}
-                                />
-                            ))}
-                        </div>
-                    </div>
+        <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+                    Trusted by the world’s most innovative teams
+                </h2>
+                <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    <img
+                        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+                        alt="Transistor"
+                        width={100}
+                        height={48}
+                    />
+                    <img
+                        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+                        alt="Reform"
+                        width={100}
+                        height={48}
+                    />
+                    <img
+                        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+                        alt="Tuple"
+                        width={100}
+                        height={48}
+                    />
+                    <img
+                        className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+                        alt="SavvyCal"
+                        width={100}
+                        height={48}
+                    />
+                    {/* <img
+                        className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+                        alt="Statamic"
+                        width={100}
+                        height={48}
+                    /> */}
                 </div>
             </div>
-        </section>
-    );
+        </div>
+    )
 }
+
+
+export default Companies;

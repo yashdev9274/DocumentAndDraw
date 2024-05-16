@@ -6,7 +6,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockMenu() {
     return (
-        <div className="pb-5">
+        <div className="mt-11 pb-5">
             <Dock>
                 <DockIcon>
                     <Icons.gitHub className="h-6 w-6" />

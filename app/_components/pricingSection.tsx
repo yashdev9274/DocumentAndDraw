@@ -14,7 +14,7 @@ type Props = {}
 const PricingSection = (props: Props) => {
     return (
         <section className="
-        h-full w-full pt-9 
+        h-full w-full pt11 
         relative flex items-center 
         justify-center flex-col bg-[#F6F6F3] dark:bg-[#0C0C0C]">
 

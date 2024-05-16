@@ -1,24 +1,7 @@
 "use client"
 
-import MaxWidthWrapper from "@/component/MaxWidthWrapper";
-// import Footer from "@/component/home/Footer";
-import HowToUse from "@/component/home/HowToUse";
-import MainContainer from "@/component/home/MainContainer";
-import WeAreOpenSourced from "@/component/home/WeAreOpenSourced";
-import dashboard from "@/public/asset/dashboard.png";
-import { ContainerScroll } from "@/component/home/container-scroll-animation";
-import { buttonVariants } from '@/components/ui/button';
-import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "@/component/home/hero-highlight";
-import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid';
-import logo from "@/public/asset/pen-svgrepo-com.svg"
-import { TextGenerateEffect } from "@/component/home/text-generate-effect";
-// import footer from "@/component/home/footer";
-
-import Link from 'next/link';
-
 import Image from "next/image";
-import { SocialLinks } from "@/component/home/social-links";
+import dashboard from "@/public/asset/dashboard.png";
 import { DockMenu } from "./_components/dockMenu";
 import { Footer } from "@/component/home/footer";
 import Hero from "./_components/Hero";
@@ -26,7 +9,8 @@ import PricingSection from "./_components/pricingSection";
 import AdBanner from "./_components/AdBanner";
 
 import { BorderBeam } from "@/component/home/border-beam";
-import { Companies } from "@/component/home/social-proof-companies";
+import Feature from "@/component/home/feature-section";
+import Companies from "@/component/home/social-proof-companies";
 
 
 
@@ -39,8 +23,7 @@ export default function Home() {
       <AdBanner />
       <Hero />
 
-      {/* Dashboard component starts here */}
-      <div className="flex justify-center items-center relative md:mt-[-70px]">
+      <div className="flex justify-center items-center relative  md:mt-[-60px]">
         <Image
           src={dashboard}
           alt="banner image"
@@ -54,9 +37,8 @@ export default function Home() {
 
       <DockMenu />
       <Companies />
-
+      <Feature />
       <PricingSection />
-
       <Footer />
 
 
