@@ -11,6 +11,7 @@ import AdBanner from "./_components/AdBanner";
 import { BorderBeam } from "@/component/home/border-beam";
 import Feature from "@/component/home/feature-section";
 import Companies from "@/component/home/social-proof-companies";
+import { Testimonials } from "@/component/home/testimonial-grid";
 
 
 
@@ -39,6 +40,7 @@ export default function Home() {
       <Companies />
       <Feature />
       <PricingSection />
+      <Testimonials />
       <Footer />
 
 
