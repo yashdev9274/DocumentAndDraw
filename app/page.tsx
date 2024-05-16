@@ -26,6 +26,7 @@ import PricingSection from "./_components/pricingSection";
 import AdBanner from "./_components/AdBanner";
 
 import { BorderBeam } from "@/component/home/border-beam";
+import { Companies } from "@/component/home/social-proof-companies";
 
 
 
@@ -52,6 +53,7 @@ export default function Home() {
       </div>
 
       <DockMenu />
+      <Companies />
 
       <PricingSection />
 
