@@ -5,14 +5,14 @@ export const Testimonials = () => {
     const testimonials = [
         {
             avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-            name: "Martin escobar",
-            title: "Founder of meta",
+            name: "Kartikey Verma",
+            title: "Founder PassCrypt",
             quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae."
         },
         {
             avatar: "https://randomuser.me/api/portraits/men/46.jpg",
-            name: "Simon andrew",
-            title: "Software engineer",
+            name: "Aryaman Awasthi",
+            title: "Data Scientist",
             quote: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
         },
         {
@@ -36,11 +36,11 @@ export const Testimonials = () => {
         justify-center flex-col bg-[#F6F6F3] ">
             <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl sm:text-center md:mx-auto">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    <h3 className="text-indigo-600 text-3xl font-semibold sm:text-4xl">
                         Hear from our users
                     </h3>
-                    <p className="mt-3 text-gray-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.
+                    <p className="mt-3 text-gray-600 pb-5">
+                        Don't just take our word for it – see what others have to say about their experience with Doc&Draw.
                     </p>
                 </div>
                 <div className="mt-12">

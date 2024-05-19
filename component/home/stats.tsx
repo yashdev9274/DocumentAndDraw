@@ -5,21 +5,21 @@ export const Stats = () => {
 
     const stats = [
         {
-            data: "35K",
+            data: "1K+",
             title: "Customers"
         },
         {
-            data: "10K+",
-            title: "Downloads"
+            data: "100+",
+            title: "Files Created"
         },
         {
-            data: "40+",
+            data: "20+",
             title: "Countries"
         },
-        {
-            data: "30M+",
-            title: "Total revenue"
-        },
+        // {
+        //     data: "30M+",
+        //     title: "Total revenue"
+        // },
     ]
 
     return (
@@ -31,10 +31,10 @@ export const Stats = () => {
                         Our customers are always happy
                     </h3>
                     <p className="mt-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis sollicitudin quam ut tincidunt.
+                        At Doc&Draw, we take pride in delivering an exceptional collaborative experience that empowers teams and fosters creativity. Our commitment to excellence is reflected in the remarkable success and satisfaction of our users:
                     </p>
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 pt-5">
                     <ul className="flex flex-col items-center justify-center gap-y-10 sm:flex-row sm:flex-wrap lg:divide-x">
                         {
                             stats.map((item, idx) => (
