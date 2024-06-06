@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import dashboard from "@/public/asset/dashboard.png";
-import screen1 from "@/public/asset/screen1.png";
+import screen from "@/public/asset/screen.jpg";
 import { DockMenu } from "./_components/dockMenu";
 import { Footer } from "@/component/home/footer";
 import Hero from "./_components/Hero";
@@ -29,7 +29,7 @@ export default function Home() {
       <Hero />
       <div className="flex justify-center items-center relative  md:mt-[-60px]">
         <Image
-          src={screen1}
+          src={screen}
           alt="banner image"
           width={1031}
           height={670}
