@@ -9,22 +9,19 @@ import MaxWidthWrapper from "../MaxWidthWrapper";
 
 const navigation = {
     product: [
-        { name: "Blog", href: "/blog" },
-        { name: "Brand", href: "/brand" },
-        { name: "Changelog", href: "/changelog" },
-        { name: "Customers", href: "/customers" },
-        { name: "Enterprise", href: "/enterprise" },
-        { name: "Pricing", href: "/pricing" },
-        { name: "Help Center", href: "/help" },
+        { name: "Blog", href: "/" },
+        { name: "Brand", href: "/" },
+        { name: "Changelog", href: "/" },
+        { name: "Customers", href: "/" },
+        { name: "Enterprise", href: "/" },
+        { name: "Pricing", href: "/" },
+        { name: "Help Center", href: "/" },
     ],
-    resources: [
-        { name: "Blog", href: "/blog" },
-        { name: "Brand", href: "/brand" },
-        { name: "Changelog", href: "/changelog" },
-        { name: "Customers", href: "/customers" },
-        { name: "Enterprise", href: "/enterprise" },
-        { name: "Pricing", href: "/pricing" },
-        { name: "Help Center", href: "/help" },
+    UseCases: [
+        { name: "Documentation", href: "/" },
+        { name: "Whiteboard", href: "/" },
+        { name: "Ai Diagrams", href: "/" },
+        { name: "Sticky Notes", href: "/" },
     ],
 
 };
@@ -47,15 +44,17 @@ export function Footer() {
             <MaxWidthWrapper className="relative z-10 overflow-hidden border border-b-0 border-gray-200 bg-white/50 pb-60 pt-16 backdrop-blur-lg md:rounded-t-2xl">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-5 px-8">
                     <div className="space-y-6">
+                        <div className="flex items-center justify-between">
 
-                        <Link href="/" className="scale-50 -ml-[52px] md:ml-0 md:scale-100">
-                            {/* <LogoLarge /> */}
-                            <span className="sr-only">Doc&Draw</span>
-                        </Link>
+                            <Link href="/" className="scale-50 -ml-[52px] md:ml-0 md:scale-100">
+                                {/* <LogoLarge /> */}
+                                <span className="sr-only">Doc&Draw</span>
+                            </Link>
 
-                        <span className="font-normal md:text-2xl text-right">
-                            Stand out as a Developer.
-                        </span>
+                            <span className="font-normal md:text-2xl text-right">
+                                Stand out as a Developer.
+                            </span>
+                        </div>
                         <div className="md:w-6/12 flex mt-8 md:mt-0 md:justify-end">
                             <div className="flex justify-between md:items-end flex-col space-y-14">
                                 <div className="flex items-center">
@@ -68,7 +67,7 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-7 grid grid-cols-2 gap-2 xl:col-span-2 xl:mt-0">
+                    <div className="mt-7 grid grid-cols-2 gap-1 xl:col-span-2 xl:mt-0">
                         <div className="mt-16 grid grid-cols-1 md:grid-cols-2  xl:col-span-2 xl:mt-0 px-8">
                             <div>
                                 <h3 className="text-sm font-semibold text-gray-800">
@@ -96,9 +95,9 @@ export function Footer() {
                                 </ul>
                             </div>
                             <div className="mt-4 md:mt-0">
-                                <h3 className="text-sm font-semibold text-gray-800">Resources</h3>
+                                <h3 className="text-sm font-semibold text-gray-800">Use Cases</h3>
                                 <ul role="list" className="mt-1 space-y-4">
-                                    {navigation.resources.map((item) => (
+                                    {navigation.UseCases.map((item) => (
                                         <li key={item.name}>
                                             <Link
                                                 href={createHref(item.href)}

@@ -19,6 +19,7 @@ import { Screens } from "@/component/home/screens";
 
 
 
+
 export default function Home() {
   return (
 
@@ -26,7 +27,6 @@ export default function Home() {
 
       <AdBanner />
       <Hero />
-
       <div className="flex justify-center items-center relative  md:mt-[-60px]">
         <Image
           src={screen1}
@@ -40,7 +40,6 @@ export default function Home() {
       </div>
 
       {/* <Screens /> */}
-
       <DockMenu />
       <Companies />
       <Feature />
@@ -48,7 +47,6 @@ export default function Home() {
       <Testimonials />
       <Stats />
       <Footer />
-
 
     </>
   );
