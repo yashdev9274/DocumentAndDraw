@@ -28,9 +28,12 @@ const MainContainer = () => {
       <p className="text-xl sm:text-2xl pb-10 sm:pb-8 leading-[19px] sm:leading-[34.5px] w-[232px] sm:w-full tracking-[-0.4px] sm:tracking-[-0.6px] text-center mx-auto">
         Have a conversation with your papers, textbooks, and contracts for free
       </p> */}
-      <Link className={buttonVariants()} href={'/dashboard'} target='blank'>
+      <Link className={buttonVariants()} href={'/'}>
         Get Started <ArrowRight className='ml-2 h-5 w-5' />
       </Link>
+      {/* <Link className={buttonVariants()} href={'/dashboard'} target='blank'>
+        Get Started <ArrowRight className='ml-2 h-5 w-5' />
+      </Link> */}
     </div>
   );
 };
