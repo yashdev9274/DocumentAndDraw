@@ -7,25 +7,25 @@ export const Testimonials = () => {
             avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
             name: "Kartikey Verma",
             title: "Founder PassCrypt",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae."
+            quote: "Great tool for documenting and designing – highly recommended for any development team."
         },
         {
             avatar: "https://randomuser.me/api/portraits/men/46.jpg",
             name: "Aryaman Awasthi",
             title: "Data Scientist",
-            quote: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+            quote: "Doc&Draw has become an essential part of our workflow – we couldn't do without it!"
         },
         {
             avatar: "https://randomuser.me/api/portraits/men/86.jpg",
             name: "Micheal worin",
             title: "Product designer",
-            quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain."
+            quote: "The dashboard is clean and user-friendly – managing teams and files has never been simpler."
         },
         {
             avatar: "https://randomuser.me/api/portraits/men/86.jpg",
             name: "Micheal worin",
             title: "Product designer",
-            quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain."
+            quote: "Doc&Draw revolutionized our project documentation process – a game-changer for developers!"
         },
     ]
 
