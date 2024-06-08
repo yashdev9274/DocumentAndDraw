@@ -20,6 +20,13 @@ export interface TEAM {
 }
 function SideNavTopSection({ user, setActiveTeamInfo }: any) {
     const menu = [
+
+        {
+            id: 1,
+            name: 'Dashboard',
+            path: '/dashboard',
+            icon: Users
+        },
         {
             id: 1,
             name: 'Create Team',
@@ -29,7 +36,7 @@ function SideNavTopSection({ user, setActiveTeamInfo }: any) {
         {
             id: 2,
             name: 'Settings',
-            path: '',
+            path: '/dashboard/settings',
             icon: Settings
         }
     ];
