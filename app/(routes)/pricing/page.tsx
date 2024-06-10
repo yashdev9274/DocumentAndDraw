@@ -2,15 +2,15 @@
 
 import { cn } from '@/lib/utils'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Check } from 'lucide-react'
+import { Check, CircleDollarSign } from 'lucide-react'
 import { useState } from 'react'
 
 const pricingPlans = [
     {
         name: 'Basic',
         description: 'Start with essential tools to boost your online presence.',
-        monthlyPrice: 69,
-        annualPrice: 49,
+        monthlyPrice: 0,
+        annualPrice: 0,
         link: '/pricing',
         features: [
             'SEO Strategy & Topic Recommendations',
@@ -26,8 +26,8 @@ const pricingPlans = [
         name: 'Professional',
         description:
             'Unlock enhanced features and premium content to supercharge your business.',
-        monthlyPrice: 299,
-        annualPrice: 199,
+        monthlyPrice: 10,
+        annualPrice: 8,
         link: '/pricing',
         features: [
             'Everything in Basic plan',
@@ -39,11 +39,11 @@ const pricingPlans = [
         ],
     },
     {
-        name: 'Premium',
+        name: 'Lifetime',
         description:
             'Ultimate customization and dedicated support for enterprises.',
-        monthlyPrice: 2499,
-        annualPrice: 1666,
+        monthlyPrice: 150,
+        annualPrice: 150,
         link: '/pricing',
         features: [
             'Everything in Professional plan',
@@ -108,7 +108,9 @@ const Pricing = () => {
                     className="w-full rounded-xl border-[1px] border-gray-300 p-6 text-left dark:border-gray-600"
                 >
                     <p className="mb-1 mt-0 text-sm font-medium uppercase text-black">
-                        {plan.name}
+
+
+                        {plan.name} <CircleDollarSign className="text-black" size={18} />
                     </p>
                     <p className="my-0 mb-6 text-sm text-gray-600">{plan.description}</p>
                     <div className="mb-8 overflow-hidden">
