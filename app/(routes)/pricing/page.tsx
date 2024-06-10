@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Check, CircleDollarSign } from 'lucide-react'
+import { Check, CircleDollarSign, BadgeCheck } from 'lucide-react'
 import { useState } from 'react'
 
 const pricingPlans = [
@@ -13,13 +13,13 @@ const pricingPlans = [
         annualPrice: 0,
         link: '/pricing',
         features: [
-            'SEO Strategy & Topic Recommendations',
-            'Competitor Analysis to stand out',
-            'Built-in Keyword Research',
-            'Target latest Google trends',
-            'SEO optimized blogs and socials',
-            'Technical SEO analysis and Reports',
-            'Target 100+ regions and languages',
+            'Free version with all features',
+            'Limited file creation',
+            'Limited collaborators',
+            'Core integrations',
+            'Basic Exports',
+            'Use text editor for free',
+            'Use canvas for drawing tool'
         ],
     },
     {
@@ -31,11 +31,12 @@ const pricingPlans = [
         link: '/pricing',
         features: [
             'Everything in Basic plan',
-            'Get 25 premium blogs',
-            'Index upto 1000 pages',
-            'Premium support',
-            'Local SEO',
-            'SEO Agent',
+            'Get Miro like editable board feature',
+            'Ulimited file creation',
+            'Multiple collaborators',
+            'Core + integrations',
+            'Project Planner',
+            'Deletable files',
         ],
     },
     {
@@ -46,10 +47,14 @@ const pricingPlans = [
         annualPrice: 150,
         link: '/pricing',
         features: [
-            'Everything in Professional plan',
-            'Get Unlimited premium blogs',
-            'Add your own AI Model key',
-            'Premium support & training sessions',
+            'Everything in Basic + Premium plan',
+            'Get Miro like editable board feature',
+            'Ulimited file creation',
+            'Multiple collaborators',
+            'Core + integrations',
+            'Project Planner',
+            'Deletable files',
+            'Lifetime feature + engineering support',
         ],
     },
 ]
@@ -65,10 +70,10 @@ const Pricing = () => {
                     Pricing
                 </div>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl dark:text-gray-200">
-                    Fair pricing, unfair advantage.
+                    Great power, with less responsibility.
                 </p>
                 <p className="text-md max-w-xl text-gray-700 md:text-center dark:text-gray-300">
-                    Get started with Acme today and take your business to the next level.
+                    Get started with DocNDraw today and take your business to the next level.
                 </p>
             </div>
             <div className="flex items-center justify-center gap-3">
@@ -78,7 +83,7 @@ const Pricing = () => {
                         `rounded-lg px-4 py-2 text-sm font-medium `,
                         billingCycle === 'M'
                             ? 'relative bg-zinc-500 text-white '
-                            : 'text-gray-700 hover:bg-zinc-100 dark:text-gray-300 dark:hover:text-black',
+                            : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-black',
                     )}
                 >
                     Monthly
@@ -90,7 +95,7 @@ const Pricing = () => {
                         `rounded-lg px-4 py-2 text-sm font-medium `,
                         billingCycle === 'A'
                             ? 'relative bg-zinc-500 text-white '
-                            : 'text-gray-700 hover:bg-red-100 dark:text-gray-300 dark:hover:text-black',
+                            : 'text-gray-700 hover:bg-zinc-100 dark:text-gray-300 dark:hover:text-black',
                     )}
                 >
                     Annual
@@ -142,7 +147,7 @@ const Pricing = () => {
                     </div>
                     {plan.features.map((feature, idx) => (
                         <div key={idx} className="mb-3 flex items-center gap-2">
-                            <Check className="text-red-500" size={18} />
+                            <BadgeCheck className="text-black" size={18} />
                             <span className="text-sm text-gray-600">{feature}</span>
                         </div>
                     ))}
