@@ -1,4 +1,4 @@
-import { ChevronDown, LayoutGrid, LogOut, Settings, Users } from 'lucide-react'
+import { ChevronDown, LayoutGrid, LogOut, Settings, Users, AppWindow } from 'lucide-react'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import {
@@ -25,7 +25,7 @@ function SideNavTopSection({ user, setActiveTeamInfo }: any) {
             id: 1,
             name: 'Dashboard',
             path: '/dashboard',
-            icon: Users
+            icon: AppWindow
         },
         {
             id: 1,
