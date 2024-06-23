@@ -23,6 +23,20 @@ const Settings = () => {
                         <Button>Save</Button>
                     </CardFooter>
                 </Card>
+                <Card x-chunk="dashboard-04-chunk-1">
+                    <CardHeader>
+                        <CardTitle>User Name</CardTitle>
+                        <CardDescription>This is user's visible name within D&D. </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <form>
+                            <Input placeholder="User Name" />
+                        </form>
+                    </CardContent>
+                    <CardFooter className="border-t px-6 py-4">
+                        <Button>Save</Button>
+                    </CardFooter>
+                </Card>
                 <Card x-chunk="dashboard-04-chunk-2">
                     <CardHeader>
                         <CardTitle>Plugins Directory</CardTitle>
