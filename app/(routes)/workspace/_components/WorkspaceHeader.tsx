@@ -10,6 +10,7 @@ import {
   LogOut,
   Mail,
   MessageSquare,
+  LayoutDashboard,
   Plus,
   PlusCircle,
   Settings,
@@ -49,6 +50,7 @@ function WorkspaceHeader({ onSave }: any) {
           <DropdownMenuTrigger asChild>
             <Button
               variant="outline"
+              size="icon" className="rounded-full"
             >
               ...
             </Button>
@@ -63,8 +65,8 @@ function WorkspaceHeader({ onSave }: any) {
                 <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <CreditCard className="mr-2 h-4 w-4" />
-                <span>Billing</span>
+                <LayoutDashboard className="mr-2 h-4 w-4" />
+                <span >Dashboard</span>
                 <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
               </DropdownMenuItem>
               <DropdownMenuItem>
@@ -121,10 +123,6 @@ function WorkspaceHeader({ onSave }: any) {
             <DropdownMenuItem>
               <LifeBuoy className="mr-2 h-4 w-4" />
               <span>Support</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem disabled>
-              <Cloud className="mr-2 h-4 w-4" />
-              <span>API</span>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
