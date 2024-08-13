@@ -28,13 +28,19 @@ function SideNavTopSection({ user, setActiveTeamInfo }: any) {
             icon: AppWindow
         },
         {
-            id: 1,
+            id: 2,
+            name: 'D3',
+            path: '/d3',
+            icon: AppWindow
+        },
+        {
+            id: 3,
             name: 'Create Team',
             path: '/teams/create',
             icon: Users
         },
         {
-            id: 2,
+            id: 4,
             name: 'Settings',
             path: '/dashboard/settings',
             icon: Settings
