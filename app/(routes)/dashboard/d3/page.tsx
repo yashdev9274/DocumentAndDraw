@@ -2,7 +2,9 @@ import React from 'react'
 
 function DnDCanvas() {
   return (
-    <div>DnDCanvas</div>
+    <div>
+      D3 Dashboard
+    </div>
   )
 }
 
