@@ -8,6 +8,12 @@ dependencies:
   '@editorjs/checklist':
     specifier: ^1.6.0
     version: 1.6.0
+  '@editorjs/code':
+    specifier: ^2.9.0
+    version: 2.9.0
+  '@editorjs/delimiter':
+    specifier: ^1.4.2
+    version: 1.4.2
   '@editorjs/editorjs':
     specifier: ^2.29.1
     version: 2.29.1
@@ -20,6 +26,9 @@ dependencies:
   '@editorjs/paragraph':
     specifier: ^2.11.4
     version: 2.11.4
+  '@editorjs/table':
+    specifier: ^2.4.1
+    version: 2.4.1
   '@editorjs/warning':
     specifier: ^1.4.0
     version: 1.4.0
@@ -62,6 +71,9 @@ dependencies:
   convex:
     specifier: ^1.11.2
     version: 1.11.2(react-dom@18.3.1)(react@18.3.1)
+  editorjs-alert:
+    specifier: ^1.1.4
+    version: 1.1.4
   framer-motion:
     specifier: ^11.1.7
     version: 11.1.7(react-dom@18.3.1)(react@18.3.1)
@@ -92,6 +104,9 @@ dependencies:
   react-resizable-panels:
     specifier: ^2.0.19
     version: 2.0.19(react-dom@18.3.1)(react@18.3.1)
+  simple-image-editorjs:
+    specifier: ^1.4.0
+    version: 1.4.0
   solid:
     specifier: link:@heroicons/react/20/solid
     version: link:@heroicons/react/20/solid
@@ -1327,14 +1342,34 @@ packages:
     resolution: {integrity: sha512-s6H2KXhLz2rgbMZSkRm8dsMJvyUNZsEjxobBEg9ztdrb1B2H3pEzY6iTwI4XUPJWJ3c3qRKwV4TrO3J5jUdoQA==}
     dev: false
 
+  /@codexteam/icons@0.0.6:
+    resolution: {integrity: sha512-L7Q5PET8PjKcBT5wp7VR+FCjwCi5PUp7rd/XjsgQ0CI5FJz0DphyHGRILMuDUdCW2MQT9NHbVr4QP31vwAkS/A==}
+    dev: false
+
   /@codexteam/icons@0.3.0:
     resolution: {integrity: sha512-fJE9dfFdgq8xU+sbsxjH0Kt8Yeatw9xHBJWb77DhRkEXz3OCoIS6hrRC1ewHEryxzIjxD8IyQrRq2f+Gz3BcmA==}
+    dev: false
+
+  /@codexteam/icons@0.3.2:
+    resolution: {integrity: sha512-P1ep2fHoy0tv4wx85eic+uee5plDnZQ1Qa6gDfv7eHPkCXorMtVqJhzMb75o1izogh6G7380PqmFDXV3bW3Pig==}
     dev: false
 
   /@editorjs/checklist@1.6.0:
     resolution: {integrity: sha512-hRNP36DInr73mSK3noHBQeoQb7DA12ANfqTXufEkTgQzx+k4mRJ0HdeGukTIR4JbwjHJ9ecUBnnQqIEGnxCFEg==}
     dependencies:
       '@codexteam/icons': 0.3.0
+    dev: false
+
+  /@editorjs/code@2.9.0:
+    resolution: {integrity: sha512-QNOWxF29j6mYl/gM5HJzeGOt3s4laoZCUbuRqj6RkIvLBWMU+ASwjckEiouA61hcYUOMfpw4vQjzhsfC7xm/vA==}
+    dependencies:
+      '@codexteam/icons': 0.0.5
+    dev: false
+
+  /@editorjs/delimiter@1.4.2:
+    resolution: {integrity: sha512-S8q2LpeYdYkVShLp7K8c4HLthDHBevLw+sT+iO0+SH0oMvFmld9SUon3DFzMQ2gG07EOdZGRZ958+sVxyvFjZw==}
+    dependencies:
+      '@codexteam/icons': 0.3.2
     dev: false
 
   /@editorjs/editorjs@2.29.1:
@@ -1357,6 +1392,12 @@ packages:
     resolution: {integrity: sha512-OuTINHoHrJwKxlpTm6FtiXazwagALJbP49hfbQWBOLTNiBICncqPe1hdGfgDpeEgH9ZEGZsJelhEDxw2iwcmPA==}
     dependencies:
       '@codexteam/icons': 0.0.4
+    dev: false
+
+  /@editorjs/table@2.4.1:
+    resolution: {integrity: sha512-2OtwS4+i9xYE0UCZV4NuQ4KM3dCnv6iqKEjDU5bu4Bolf7AkYTIfQ7+axJLCrb7glz3ulWXILweBpCnqYqr+AA==}
+    dependencies:
+      '@codexteam/icons': 0.0.6
     dev: false
 
   /@editorjs/warning@1.4.0:
@@ -2760,6 +2801,10 @@ packages:
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
+  /editorjs-alert@1.1.4:
+    resolution: {integrity: sha512-m6w/cRxnFucC3dyfrB+DTNXw70SnJNv05AX6P3bZ8qkbzB1OAJTuaFrEKZBdN0YvEvTe1zvg3S344EkPAveemQ==}
+    dev: false
+
   /electron-to-chromium@1.4.755:
     resolution: {integrity: sha512-9nop+3jZxSHIxe1EzEUcjDXzK+3qOv3fY5w0sE88nIZUntbv1aXWmoxGWlklX5XSO4txCpLssWkUSh8RQPovBg==}
 
@@ -3464,6 +3509,10 @@ packages:
   /signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  /simple-image-editorjs@1.4.0:
+    resolution: {integrity: sha512-XSjWtf6HzzxWR4Fk0PTr3tpvw5OxCTHXJYEhMc0e8+uIa79H9M6Ct55ujWQctt6XP0IoXuhshCdPKFrcyUNtnw==}
+    dev: false
 
   /sonner@1.4.41(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-uG511ggnnsw6gcn/X+YKkWPo5ep9il9wYi3QJxHsYe7yTZ4+cOd1wuodOUmOpFuXL+/RE3R04LczdNCDygTDgQ==}
