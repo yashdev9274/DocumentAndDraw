@@ -7,6 +7,7 @@ import React, { useEffect } from 'react'
 import Header from './_components/Header'
 import FileList from './_components/FileList'
 import AdBanner from './../../_components/AdBanner'
+import Projects from './projects/page'
 function Dashboard() {
 
   const convex = useConvex();
@@ -39,7 +40,6 @@ function Dashboard() {
       <Header />
 
       <FileList />
-
     </div>
 
   )
