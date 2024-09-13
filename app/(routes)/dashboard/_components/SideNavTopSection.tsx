@@ -1,4 +1,4 @@
-import { ChevronDown, LayoutGrid, LogOut, Settings, Users, AppWindow } from 'lucide-react'
+import { ChevronDown, LayoutGrid, LogOut, Settings, Users, AppWindow, FolderOpenDot } from 'lucide-react'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import {
@@ -29,18 +29,24 @@ function SideNavTopSection({ user, setActiveTeamInfo }: any) {
         },
         {
             id: 2,
-            name: 'D3',
+            name: 'Projects',
+            path: '/dashboard/projects',
+            icon: FolderOpenDot
+        },
+        {
+            id: 3,
+            name: 'D3-Canva',
             path: '/d3',
             icon: AppWindow
         },
         {
-            id: 3,
+            id: 4,
             name: 'Create Team',
             path: '/teams/create',
             icon: Users
         },
         {
-            id: 4,
+            id: 5,
             name: 'Settings',
             path: '/dashboard/settings',
             icon: Settings
