@@ -14,7 +14,10 @@
     <br />
     <a href=""><strong>Learn more »</strong></a>
     <br />
-	<br>
+    <br>
+    Version 0.1 is coming soon...
+    </br>
+  <br>
     <a href="">Discord</a>
     ·
     <a href="">Website</a>
