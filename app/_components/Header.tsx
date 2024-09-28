@@ -3,7 +3,9 @@ import Logo from '@/public/asset/logo.svg'
 import Menu from '@/public/asset/icon-menu.svg'
 import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs'
 import Image from 'next/image'
+import { buttonVariants } from "@/components/ui/button";
 import React from 'react'
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -13,11 +15,16 @@ const Header = () => {
         <div className='flex justify-between items-center mt-2 md:border border-white/15 md:p-2.5 rounded-xl mx-w-2xl mx-auto'>
           <div className='flex items-center'>
             <div className='border h-10 w-10 rounded-lg inline-flex justify-center intems-center border-gray/15 bg-white'>
-              <Image
-                src={Logo}
-                alt="logo"
-                className="h-10 w-8"
-              />
+              <Link
+                href="/"
+                className="flex z-40 font-semibold"
+              >
+                <Image
+                  src={Logo}
+                  alt="logo"
+                  className="h-10 w-8"
+                />
+              </Link>
             </div>
             <div className='ml-20 items-center hidden md:block'>
               <nav className='flex gap-5 text-sm'>
@@ -39,7 +46,16 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <LoginLink postLoginRedirectURL="/dashboard"> Login</LoginLink>
+                {/* <LoginLink postLoginRedirectURL="/dashboard"> Login</LoginLink> */}
+
+                <LoginLink
+                  className={buttonVariants({
+                    variant: "ghost",
+                  })}
+                >
+                  Sigin
+                </LoginLink>
+
               </button>
               <Image
                 src={Menu}
@@ -52,12 +68,14 @@ const Header = () => {
 
       </div>
 
-    </header>
-    //     <header className="bg-black">
+    </header >
+
+
+    // <header className="bg-black">
     //   <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
     //     <Image src='/logo.svg' alt='logo'
-    //     width={100}
-    //     height={100}
+    //       width={100}
+    //       height={100}
     //     />
 
     //     <div className="flex flex-1 items-center justify-end md:justify-between">
@@ -104,7 +122,7 @@ const Header = () => {
     //               hover:text-slate-800 sm:block"
 
     //           >
-    //           <RegisterLink>Register</RegisterLink>  
+    //             <RegisterLink>Register</RegisterLink>
     //           </div>
     //         </div>
 
